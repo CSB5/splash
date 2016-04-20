@@ -1,2 +1,87 @@
-This page will soon (i.e. after manuscript acceptance) be populated with
-information (data, source code etc.) about SPLASH.
+<h1>SPLASH: in vivo mapping of eukaryotic RNA interactomes</h1>
+
+<p>
+This is the home of SPLASH (Sequencing of Psoralen crosslinked,
+Ligated, and Selected Hybrids).
+</p>
+<p>
+Method and results are described
+in Aw <i>et al.</i> (2016; accepted in
+Molecular Cell).
+</p>
+
+<h2>Abstract</h2>
+
+The extent of functional biological interactions between RNAs in
+living cells is largely unknown. Identifying pairwise RNA-RNA
+interactions is key to understanding how RNAs fold and how they
+interact with other RNA partners in the cell. We present a novel
+high-throughput approach, SPLASH, that maps pairwise RNA interaction
+partners with high sensitivity and low false discovery rate (<4&#37;)
+in a non-selective, genome-wide manner in-vivo. Applying SPLASH to the
+human and yeast transcriptomes revealed the diversity and dynamics of
+thousands of long-range intramolecular and intermolecular RNA-RNA
+interactions. Analysis of this large collection of interactions
+highlighted key differences in structural organization of RNA classes,
+including the modular organization of mRNAs and its impact on their
+translation and decay, as well as the enrichment of long-range
+interactions in non-coding RNAs. Additionally, intermolecular mRNA
+interactions were found to be organized into network clusters of
+co-regulated genes with similar functions, which underwent significant
+reorganization during cellular differentiation. SPLASH analysis
+identified hundreds of known and new snoRNA-rRNA binding sites that
+serve to refine and expand our understanding of rRNA biogenesis. These
+results highlight the under-explored complexity of RNA interactomes
+and their role in gene regulation, and paves the way for deepening our
+understanding of how RNA organization impacts biology.
+
+<h2>Read Data</h2>
+
+<p>
+Sequencing data for the human samples can be accessed under BioProject
+ID <a href="http://www.ncbi.nlm.nih.gov/bioproject/318958">PRJNA318958</a>
+(release date: 30th April 2016). 
+</p>
+<p>
+The originally overlapping, paired-end reads were preprocessed
+with <a href="https://github.com/jstjohn/SeqPrep">SeqPrep</a> and
+successfully merged reads were uploaded. See table for a list of accessible samples:
+</p>
+
+<table border="1">
+<tr><th>Accession</th><th>Sample Name</th></tr>
+<tr><td>SAMN04870484</td><td>Lymphoblastoid Cells Total RNA Replicate 1</td></tr>
+<tr><td>SAMN04870485</td><td>Lymphoblastoid Cells Total RNA Replicate 2</td></tr>
+<tr><td>SAMN04870486</td><td>Lymphoblastoid Cells Total RNA Replicate 3</td></tr>
+<tr><td>SAMN04870487</td><td>Lymphoblastoid Cells Total RNA Replicate 4</td></tr>
+<tr><td>SAMN04870488</td><td>Lymphoblastoid snoRNA IP</td></tr>
+<tr><td>SAMN04870489</td><td>Lymphoblastoid Cells PolyA Replicate 1</td></tr>
+<tr><td>SAMN04870490</td><td>Lymphoblastoid Cells PolyA Replicate 2</td></tr>
+<tr><td>SAMN04870491</td><td>Lymphoblastoid Cells PolyA Replicate 3</td></tr>
+<tr><td>SAMN04870492</td><td>Lymphoblastoid Cells PolyA Replicate 4</td></tr>
+<tr><td>SAMN04870493</td><td>Human ES PolyA Replicate 1</td></tr>
+<tr><td>SAMN04870494</td><td>Human ES PolyA Replicate 2</td></tr>
+<tr><td>SAMN04870495</td><td>Human RA PolyA Replicate 1</td></tr>
+<tr><td>SAMN04870496</td><td>Human RA PolyA Replicate 2</td></tr>
+<tr><td>SAMN04870497</td><td>Biotinylated psoralen libraries replicate 1</td></tr>
+<tr><td>SAMN04870498</td><td>Biotinylated psoralen libraries replicate 2</td></tr>
+<tr><td>SAMN04870499</td><td>Psoralen libraries replicate 1</td></tr>
+<tr><td>SAMN04870500</td><td>Psoralen libraries replicate 2</td></tr>
+<tr><td>SAMN04870501</td><td>DMSO libraries replicate 1</td></tr>
+<tr><td>SAMN04870502</td><td>DMSO libraries replicate 2</td></tr>
+</table>
+
+<h2>List of derived RNA-RNA Interactions</h2>
+
+The following CSV files list interacting RNAs and regions that were
+detected by SPLASH in the four cell-line types. The "bin" field is the
+approximate crosslink i.e. interaction position in the
+respective RNAs (truncated window of 100 basepairs; see section
+"Binning and filtering of interacting RNA pairs" in the paper). The
+"covfilter" field lists interaction counts
+<ul>
+<li><a href="data/Hela-interactions.csv.gz">HeLa</a></li>
+<li><a href="data/Lcl-interactions.csv.gz">Lymphoblastoid cells</a></li>
+<li><a href="data/ES-interactions.csv.gz">ES cells</a></li>
+<li><a href="data/RA-interactions.csv.gz">RA diff. cells</a></li>
+</ul>
