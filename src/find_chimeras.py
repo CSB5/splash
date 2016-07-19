@@ -1,5 +1,4 @@
-#!/mnt/software/unstowable/anaconda/bin/python2
-##!/usr/bin/env python2
+#!/usr/bin/env python2
 """Chimera finding based on BWA-MEM split/secondary alignment
 """
 
@@ -17,6 +16,12 @@ from cigar import Cigar
 
 # anything below treated as singletons
 MIN_CHIM_DIST = 50
+
+
+__author__ = "Andreas Wilm"
+__email__ = "wilma@gis.a-star.edu.sg"
+__copyright__ = "2016 Genome Institute of Singapore"
+__license__ = "The MIT License (MIT)"
 
 
 def query_aln_seq(queryseq, cigar):

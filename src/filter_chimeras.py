@@ -1,4 +1,4 @@
-#!/mnt/software/unstowable/anaconda/bin/python
+#!/usr/bin/env python2
 """FIXME:add-doc
 """
 
@@ -7,6 +7,12 @@ import os
 import argparse
 
 from chimeras2 import parse_chimeras, chim_gets_filtered
+
+
+__author__ = "Andreas Wilm"
+__email__ = "wilma@gis.a-star.edu.sg"
+__copyright__ = "2016 Genome Institute of Singapore"
+__license__ = "The MIT License (MIT)"
 
 
 def main():
